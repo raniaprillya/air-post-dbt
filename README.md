@@ -21,17 +21,19 @@ Next, initialize the Airflow database:
 
 ```bash
 airflow db init
+```
+
 Start the Airflow webserver:
 
 ```bash
 airflow standalone
-Make sure to add the following to your .
+```
 
-```bashrc file to set the Airflow home directory:
+Make sure to set the Airflow home directory:
 
 ```bash
-
 export AIRFLOW_HOME=~/apps/airflow-local
+```
 
 Create a dags folder inside the Airflow home directory, and configure the dags_folder in your airflow.cfg file:
 dags_folder = /home/user/apps/airflow-local/dags
@@ -43,12 +45,14 @@ Install PostgreSQL and related dependencies:
 sudo apt install postgresql postgresql-contrib libpq-dev
 Start PostgreSQL service
 sudo service postgresql start
+```
 
 3. DBT Setup
 Install DBT and the necessary PostgreSQL adapter:
 
 ```bash
 pip install dbt-core dbt-postgres
+```
 
 Now, initialize your DBT project:
 
@@ -56,12 +60,13 @@ Now, initialize your DBT project:
 mkdir dbt
 cd dbt
 dbt init projectname
+```
 
 run DBT transformations:
 
 ```bash
 dbt run
-
+```
 
 Usage
 After completing the installation, you can start the data pipeline by triggering Airflow to execute your tasks. Airflow will handle the orchestration of data extraction, loading into PostgreSQL, and then DBT will apply transformations to prepare the data for analysis.
