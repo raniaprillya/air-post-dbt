@@ -8,7 +8,7 @@ This is a random project which a data pipeline that orchestrates workflows using
 2. Postgre as the database to store and manage data.
 3. DBT to transforms the data within the database.
 
-** i'm using jaffle_shop which reserved by dbt example project for exploring the basic functionality and latest features of dbt. It's based on a fictional restaurant called the Jaffle Shop that serves jaffles.
+** i'm using jaffle_shop which provided by dbt example project for exploring the basic functionality and latest features of dbt. It's based on a fictional restaurant called the Jaffle Shop that serves jaffles.
 [source](https://github.com/dbt-labs/jaffle-shop)
 
 ## Installation
