@@ -15,6 +15,8 @@ This is a random project which a data pipeline that orchestrates workflows using
 
 ```bash
 pip install apache-airflow
+```
+
 Next, initialize the Airflow database:
 
 ```bash
