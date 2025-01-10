@@ -20,6 +20,6 @@ dag = DAG('dbt_run', default_args=default_args, schedule_interval=timedelta(days
 # Define the dbt run command as a BashOperator
 run_dbt_model = BashOperator(
     task_id='run_dbt_model',
-    bash_command='cd /home/rani/apps/dbt-demo && source dbt-env/bin/activate && cd jaffle_shop_main && dbt run',
+    bash_command='cd /home/user/apps/dbt-demo && source dbt-env/bin/activate && cd jaffle_shop_main && dbt run',
     dag=dag
 )
